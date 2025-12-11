@@ -1,0 +1,58 @@
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important;
+}
+
+nav {
+    font-size: 10px;
+}
+
+.logoNetflix {
+    max-width: 90px;
+}
+
+.logoUser {
+    max-width: 20px;
+    background-color: white;
+}
+
+.dropdown-menu {
+    font-size: 10px
+}
+
+.card {
+    transition: transform 0.9s ease;
+}
+
+.card:hover {
+    transform: scale(1.5);
+    z-index: 10;
+}
+
+.trending,
+.watch,
+.releases {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 1s linear; 
+}
+
+
+.trending:hover .slider-track,
+.watch:hover .slider-track,
+.releases:hover .slider-track {
+    transform: translateX(-300px);
+    overflow:visible;
+}
+
+
+
+
+footer {
+    font-size: 10px;
+}
+

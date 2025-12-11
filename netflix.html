@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<link rel="stylesheet" href="netflix.css">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+    defer></script>
+
+<script src="netflix.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/Netflix_Logo_RGB.png" alt="netflix logo" class="logoNetflix">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <strong>TV Shows</strong></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Movies</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recently Added</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My List</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex align-items-center" role="search">
+                        <i class="bi bi-search"></i>
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">KIDS</a>
+                            </li>
+                        </ul>
+
+                        <i class="bi bi-bell-fill"></i>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="assets/user.webp" alt="user image" class="logoUser">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-end">
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="bi bi-person"></i>
+                                            Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="bi bi-gear"></i>
+                                            setting</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">
+                                            <i class="bi bi-box-arrow-left"></i>
+                                            logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="netflix-slider position-relative">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="trending my-3">
+                        <strong>Trending Now</strong>
+
+                        <div class="slider-track d-flex gap-1">
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/1.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/2.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/3.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/4.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/5.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/6.png" class="card-img-top">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="watch my-3">
+                        <strong> Watch It Again </strong>
+
+                        <div class="slider-track d-flex gap-1">
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/7.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/8.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/9.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/10.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/11.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/12.png" class="card-img-top">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="releases my-3">
+                        <strong>Now Releases</strong>
+
+                        <div class="slider-track d-flex gap-1">
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/13.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/14.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/15.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/16.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/17.png" class="card-img-top">
+                            </div>
+
+                            <div class="card" style="min-width: 200px;">
+                                <img src="assets/movies/18.png" class="card-img-top">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="container">
+        <div class="row mt-5">
+
+
+            <div>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-youtube"></i>
+            </div>
+
+            <div class="d-flex gap-5">
+
+                <div class="my-3">
+                    <p>Audio and Subtitles</p>
+                    <p> Media Center</p>
+                    <p>Privacy</p>
+                    <p>Contact Us</p>
+                </div>
+
+
+                <div class="my-3">
+                    <p>Audio Description</p>
+                    <p>Investor Relations</p>
+                    <p>Legal Notices</p>
+                </div>
+
+                <div class="my-3">
+                    <p>Help center</p>
+                    <p>Jobs</p>
+                    <p>Cookie Preference</p>
+                </div>
+
+                <div class="my-3">
+                    <p>gift Card</p>
+                    <p>Terms of Use</p>
+                    <p>Corporate Information</p>
+                </div>
+            </div>
+
+            <span class="border border-light w-auto">Service Code </span>
+
+            <p class="mt-3"> © 1997-2019 Netflix, Inc. {i-0d00fcda2fdf9c0de}</p>
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
