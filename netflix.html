@@ -10,15 +10,15 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
 
-<link rel="stylesheet" href="netflix.css">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
-    defer></script>
+    <link rel="stylesheet" href="netflix.css">
 
-<script src="netflix.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+        defer></script>
+
+    <script src="netflix.js" defer></script>
 </head>
 
 <body>
@@ -61,32 +61,35 @@
                         </li>
                     </ul>
 
-                    <form class="d-flex align-items-center" role="search">
+
+                    <form class="d-flex align-items-center gap-2" role="search">
                         <i class="bi bi-search"></i>
 
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">KIDS</a>
-                            </li>
-                        </ul>
+                        <span>KIDS</span>
 
                         <i class="bi bi-bell-fill"></i>
+
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
                             <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    <img src="assets/user.webp" alt="user image" class="logoUser">
+                                    <img src="assets/user.png" alt="user image" class="logoUser">
                                 </a>
+
                                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-end">
                                     <li><a class="dropdown-item" href="#">
-                                            <i class="bi bi-person"></i>
+                                            <img src="assets/user.png" alt="user image" class="logoUser">
                                             Profile</a></li>
+
                                     <li><a class="dropdown-item" href="#">
                                             <i class="bi bi-gear"></i>
                                             setting</a></li>
+
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
+
                                     <li><a class="dropdown-item" href="#">
                                             <i class="bi bi-box-arrow-left"></i>
                                             logout</a></li>
@@ -107,102 +110,133 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="trending my-3">
-                        <strong>Trending Now</strong>
+                    <div class="d-flex gap-3 align-items-center">
+                        TV Shows
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                Genres
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">movie</button></li>
+                                <li><button class="dropdown-item" type="button">anime</button></li>
+                                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                        <div class="slider-track d-flex gap-1">
+                    <div>
+                        <div class="trending slider-wrapper">
 
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/1.png" class="card-img-top">
+                            <strong>Trending Now</strong>
+
+                            <button class="arrow left ">&#10094;</button>
+
+                            <div class="slider-track d-flex gap-1">
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/1.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/2.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/3.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/4.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/5.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/6.png" class="card-img-top">
+                                </div>
+                            </div>
+                            <button class="arrow right">&#10095;</button>
+                        </div>
+
+
+                        <div class="watch slider-wrapper">
+                            <strong> Watch It Again </strong>
+
+                            <button class="arrow left ">&#10094;</button>
+
+                            <div class="slider-track d-flex gap-1">
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/7.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/8.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/9.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/10.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/11.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/12.png" class="card-img-top">
+                                </div>
+
                             </div>
 
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/2.png" class="card-img-top">
+                            <button class="arrow right">&#10095;</button>
+                        </div>
+
+                        <div class="releases slider-wrapper">
+                            <strong>Now Releases</strong>
+
+                            <button class="arrow left ">&#10094;</button>
+
+
+                            <div class="slider-track d-flex gap-1">
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/13.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/14.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/15.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/16.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/17.png" class="card-img-top">
+                                </div>
+
+                                <div class="card" style="min-width: 200px;">
+                                    <img src="assets/movies/18.png" class="card-img-top">
+                                </div>
+
                             </div>
 
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/3.png" class="card-img-top">
-                            </div>
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/4.png" class="card-img-top">
-                            </div>
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/5.png" class="card-img-top">
-                            </div>
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/6.png" class="card-img-top">
-                            </div>
+                            <button class="arrow right">&#10095;</button>
 
                         </div>
                     </div>
 
-                    <div class="watch my-3">
-                        <strong> Watch It Again </strong>
 
-                        <div class="slider-track d-flex gap-1">
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/7.png" class="card-img-top">
-                            </div>
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/8.png" class="card-img-top">
-                            </div>
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/9.png" class="card-img-top">
-                            </div>
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/10.png" class="card-img-top">
-                            </div>
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/11.png" class="card-img-top">
-                            </div>
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/12.png" class="card-img-top">
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="releases my-3">
-                        <strong>Now Releases</strong>
-
-                        <div class="slider-track d-flex gap-1">
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/13.png" class="card-img-top">
-                            </div>
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/14.png" class="card-img-top">
-                            </div>
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/15.png" class="card-img-top">
-                            </div>
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/16.png" class="card-img-top">
-                            </div>
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/17.png" class="card-img-top">
-                            </div>
-
-                            <div class="card" style="min-width: 200px;">
-                                <img src="assets/movies/18.png" class="card-img-top">
-                            </div>
-
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
@@ -221,9 +255,9 @@
                 <i class="bi bi-youtube"></i>
             </div>
 
-            <div class="d-flex gap-5">
+            <div class="d-flex">
 
-                <div class="my-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <p>Audio and Subtitles</p>
                     <p> Media Center</p>
                     <p>Privacy</p>
@@ -231,19 +265,19 @@
                 </div>
 
 
-                <div class="my-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <p>Audio Description</p>
                     <p>Investor Relations</p>
                     <p>Legal Notices</p>
                 </div>
 
-                <div class="my-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <p>Help center</p>
                     <p>Jobs</p>
                     <p>Cookie Preference</p>
                 </div>
 
-                <div class="my-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <p>gift Card</p>
                     <p>Terms of Use</p>
                     <p>Corporate Information</p>

@@ -20,39 +20,67 @@ nav {
     font-size: 10px
 }
 
-.card {
-    transition: transform 0.9s ease;
+.trending,
+.watch,
+.releases {
+    width: 100%;
+    padding: 40px 0;
+    position: relative;
 }
 
+/* Wrapper con overflow */
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Track che scorre */
+.slider-track {
+    display: flex;
+    gap: 10px;
+    transition: transform 1s ease;
+    will-change: transform;
+}
+
+/* Card stile Netflix */
+.card {
+    min-width: 200px;
+    border-radius: 4px;
+    overflow: visible;
+    position: relative;
+    transition: transform 0.3s ease, z-index 0s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Zoom in hover */
 .card:hover {
     transform: scale(1.5);
     z-index: 10;
 }
 
-.trending,
-.watch,
-.releases {
-    width: 100%;
-    overflow: hidden;
-}
-
-.slider-track {
-  display: flex;
-  transition: transform 1s linear; 
-}
-
-
-.trending:hover .slider-track,
-.watch:hover .slider-track,
-.releases:hover .slider-track {
-    transform: translateX(-300px);
-    overflow:visible;
-}
-
-
-
-
-footer {
+/* Frecce */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(20, 20, 20, 0.8);
+    color: white;
+    border: none;
     font-size: 10px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    z-index: 20;
 }
 
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}
